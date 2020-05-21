@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body onloadstart="checkCookie()" onload="listenSubmit()">
+    <h1 class="title">Ultimate Tic Tac Toe</h1>
+    <div class="login-container">
+      <form onsubmit="login()" class="login container col-6 col-10-s bg-info">
+        <div style="display: inline-block;">
+          <h2 class="">Please enter your name</h2>
+          <input id="name" class="form-control form-control-lg" type="text" placeholder="your name">
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

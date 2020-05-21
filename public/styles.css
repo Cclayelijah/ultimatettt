@@ -1,0 +1,198 @@
+:root{
+  -blue: #D1ECF1;
+  -green: #D4EDDA;
+  -red: #F8D7DA;
+  -yellow: #FFF3CD;
+  -light: #F2F3F4;
+  -dark: #333333;
+}
+
+body{
+  font-size: 18px;
+  background-color: #F2F3F4;
+}
+
+h1{
+  font-size: 52px;
+  margin: 20px 0 30px;
+}
+
+.title{
+  text-align: center;
+}
+
+.game-container{
+  display: flex;
+  height: 80vh;
+}
+
+.game-panel{
+  background-color: #F2F3F4;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.side-panel{
+  background-color: #333333;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player-panel{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.opponent-panel{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.player-panel .icon-box {
+  border-bottom-right-radius: 10px;
+}
+
+.opponent-panel .icon-box {
+  border-bottom-left-radius: 10px;
+}
+
+.player-card{
+  padding: 10px 10px 0;
+  color: #F2F3F4;
+}
+
+.profile-pic{
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #F2F3F4;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
+
+.player-tag{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#myPlayerNum{
+  color: #D1ECF1;
+}
+
+#opponentPlayerNum{
+  color: #F8D7DA;
+}
+
+.icon-box{
+  background-color: #F2F3F4;
+  font-size: 200%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.icon-box:hover{
+  -webkit-filter: brightness(90%);
+}
+
+.timer{
+  padding: 10%;
+  margin: 10px 20px;
+  font-size: 200%;
+  color: #F2F3F4;
+  background-color: #333333;
+  border-radius: 50%;
+  border: 3px solid #F2F3F4;
+  text-align: center;
+  visibility: hidden;
+}
+
+#board-wrapper{
+  padding: 0 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.chat-container{
+  border: 3px solid #333333;
+  border-radius: 15px;
+  margin: 0 25px;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.message-container{
+  flex-grow: 1;
+}
+
+.chat-1{
+  background-color: #D1ECF1;
+}
+
+.chat-2{
+  background-color: #F8D7DA;
+}
+
+.dock{
+  padding-top: 20px;
+  border-top: 3px solid #333333;
+}
+
+.form-group{
+  display: flex;
+}
+
+.board-container{
+  height: 100%;
+  width: 0;
+  padding-right: 80vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.board{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: 32.5% 32.5% 32.5%;
+  grid-template-rows: 32.5% 32.5% 32.5%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.inner-board{
+  height: 100%;
+  width: 100%;
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.box{
+  background-color: #F2F3F4;
+  padding: 10%;
+}
+
+.small-box{
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.small-box:hover{
+  background-color: #D4EDDA;
+}
