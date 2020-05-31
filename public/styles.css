@@ -23,7 +23,7 @@ h1{
 
 .game-container{
   display: flex;
-  height: 80vh;
+  height: 80vmin;
 }
 
 .game-panel{
@@ -80,14 +80,6 @@ h1{
   flex-wrap: wrap;
 }
 
-#myPlayerNum{
-  color: #D1ECF1;
-}
-
-#opponentPlayerNum{
-  color: #F8D7DA;
-}
-
 .icon-box{
   background-color: #F2F3F4;
   font-size: 200%;
@@ -132,14 +124,6 @@ h1{
   flex-grow: 1;
 }
 
-.chat-1{
-  background-color: #D1ECF1;
-}
-
-.chat-2{
-  background-color: #F8D7DA;
-}
-
 .dock{
   padding-top: 20px;
   border-top: 3px solid #333333;
@@ -152,7 +136,7 @@ h1{
 .board-container{
   height: 100%;
   width: 0;
-  padding-right: 80vh;
+  padding-right: 80vmin;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -165,8 +149,9 @@ h1{
   top: 0;
   background-color: #333333;
   display: grid;
-  grid-template-columns: 32.5% 32.5% 32.5%;
-  grid-template-rows: 32.5% 32.5% 32.5%;
+  grid-gap: 6px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-content: space-between;
   align-content: space-between;
 }
@@ -176,8 +161,9 @@ h1{
   width: 100%;
   background-color: #333333;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-content: space-between;
   align-content: space-between;
 }
@@ -190,9 +176,25 @@ h1{
 .small-box{
   height: 100%;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 15%;
 }
 
-.small-box:hover{
-  background-color: #D4EDDA;
+.blue{
+  background-color: #96D4DF;
+}
+
+.red{
+  background-color: #ED969E;
+}
+
+.fill-blue{
+  background-color: #D1ECF1;
+}
+
+.fill-red{
+  background-color: #F8D7DA;
+}
+
+.fill-yellow{
+  background-color: #FFF3CD;
 }

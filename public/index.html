@@ -2,16 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
-    <script src="login.js"></script>
+    <title>Ultimate Tic Tac Toe - Play Online Free</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="login.css">
   </head>
-  <body onloadstart="checkCookie()" onload="listenSubmit()">
+  <body>
     <h1 class="title">Ultimate Tic Tac Toe</h1>
     <div class="login-container">
-      <form onsubmit="login()" class="login container col-6 col-10-s bg-info">
+      <form id="login-form" class="login container col-6 col-10-s bg-info">
         <div style="display: inline-block;">
           <h2 class="">Please enter your name</h2>
           <input id="name" class="form-control form-control-lg" type="text" placeholder="your name">
@@ -19,5 +20,6 @@
         <button type="submit" class="btn btn-lg btn-primary">Submit</button>
       </form>
     </div>
+    <script src="/login.js"></script>
   </body>
 </html>
